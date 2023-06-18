@@ -1,9 +1,12 @@
 import "./App.css";
+import Card from "./components/card";
+import Head from "./components/Head";
 
 function App() {
   return (
     <>
-      <div>Start</div>
+      <Head/>
+      <Card/>
     </>
   );
 }
