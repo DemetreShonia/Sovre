@@ -1,7 +1,26 @@
 .map {
   margin-top: 80px;
 }
-
+.close-container {
+  display: flex;
+  justify-content: center;
+}
+.back {
+  text-align: center;
+}
+.close-btn-to-map {
+  width: 70%;
+  height: 50px;
+  background-color: red;
+  border-radius: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
 .bottom {
   overflow: auto; /* This enables the scrollbar when content overflows */
   height: 220px;
@@ -189,7 +208,9 @@
   align-items: center;
   border-radius: 0.4rem;
 }
-
+.no-money {
+  background-color: #7873be;
+}
 .discount {
   background-color: #e17055;
   color: white;
@@ -201,4 +222,8 @@
 }
 .claim-txt {
   margin: 0;
+}
+
+.nameof {
+  text-align: center;
 }

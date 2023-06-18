@@ -10,22 +10,52 @@ import goldenFlee from "../Images/golden-flee.jfif";
 
 const Map = () => {
   const [isSuggOn, setIsSuggOn] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState(-1); // -1 means nothing is selected
   const onGreenPinClicked = () => {
-    console.log("GREEN");
+    setSelectedLocation(0);
   };
   const onRedPinClicked = () => {
-    console.log("RED");
+    setSelectedLocation(2);
   };
   const onOrangePinClicked = () => {
-    console.log("Orange");
+    setSelectedLocation(1);
   };
   const onClickSuggestions = () => {
     setIsSuggOn(true);
-    console.log();
   };
   const onClickDisableSuggestions = () => {
     setIsSuggOn(false);
   };
+  const locLinks = [
+    "https://cdn.georgiantravelguide.com/storage/thumbnails/aa-dsc0236-13-3.jpg",
+    "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-440300-10-2.jpg",
+    "https://cdn.georgiantravelguide.com/storage/thumbnails/img-4745-2.jpg",
+  ];
+
+  const names = [
+    "დადიანების სასახლე",
+    "მარტვილის კანიონი",
+    "ტობავარჩხილის ტბა",
+  ];
+  // loc ids
+  // 0 = dadianebi
+  // 1 = martvili
+  // 2 = tobavarchxili
+  if (selectedLocation != -1) {
+    return (
+      <div className="loc-info">
+        <img src={locLinks[selectedLocation]} alt="" className="loc-img" />
+        <h1 className="nameof">{names[selectedLocation]}</h1>
+        <div className="close-container">
+          <div
+            className="close-btn-to-map"
+            onClick={() => setSelectedLocation(-1)}>
+            დაბრუნება
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (isSuggOn)
     return (
@@ -71,7 +101,7 @@ const Map = () => {
               <div className="discount">
                 <h4 className="claim-txt">-40%</h4>
               </div>
-              <div className="claim-btn">
+              <div className="claim-btn no-money">
                 <div className="prize-img">
                   <img className="prize-sm" src={present} alt="" />
                 </div>
