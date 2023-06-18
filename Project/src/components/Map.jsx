@@ -207,9 +207,9 @@ const Map = () => {
 
           <div className="prizes" onClick={onClickSuggestions}>
             შეთავაზებები
-            <div className="prize-img">
+            {/* <div className="prize-img">
               <img className="prize" src={present} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

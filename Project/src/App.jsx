@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Head />
-      <Card />
+      <Map />
     </>
   );
 }
