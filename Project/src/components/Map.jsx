@@ -41,7 +41,30 @@ const Map = () => {
           <div className="element">
             <img className="partner-img" src={goldenFlee} alt="" />
             <div className="img-holder">
-              <div className="price">3000</div>
+              <div className="price">1200</div>
+              <img className="star-sm" src={Star} alt="" />
+            </div>
+            <div className="other-cont">
+              <div className="discount">
+                <h4 className="claim-txt">-15%</h4>
+              </div>
+              <div className="claim-btn">
+                <div className="prize-img">
+                  <img className="prize-sm" src={present} alt="" />
+                </div>
+                <h4 className="claim-txt">მიღება</h4>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div className="element">
+            <img
+              className="partner-img"
+              src="https://cdn.georgiantravelguide.com/storage/thumbnails/aa-dsc0236-13-3.jpg"
+              alt=""
+            />
+            <div className="img-holder">
+              <div className="price">2300</div>
               <img className="star-sm" src={Star} alt="" />
             </div>
             <div className="other-cont">
@@ -58,33 +81,18 @@ const Map = () => {
           </div>
           <hr />
           <div className="element">
-            <img className="partner-img" src={goldenFlee} alt="" />
+            <img
+              className="partner-img"
+              src="https://www.radioatinati.ge/pictures/1/4330e93b917cc1ba8107f15af775a76b.jpg"
+              alt=""
+            />
             <div className="img-holder">
-              <div className="price">3000</div>
+              <div className="price">1100</div>
               <img className="star-sm" src={Star} alt="" />
             </div>
             <div className="other-cont">
               <div className="discount">
-                <h4 className="claim-txt">-40%</h4>
-              </div>
-              <div className="claim-btn">
-                <div className="prize-img">
-                  <img className="prize-sm" src={present} alt="" />
-                </div>
-                <h4 className="claim-txt">მიღება</h4>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div className="element">
-            <img className="partner-img" src={goldenFlee} alt="" />
-            <div className="img-holder">
-              <div className="price">3000</div>
-              <img className="star-sm" src={Star} alt="" />
-            </div>
-            <div className="other-cont">
-              <div className="discount">
-                <h4 className="claim-txt">-40%</h4>
+                <h4 className="claim-txt">-20%</h4>
               </div>
               <div className="claim-btn">
                 <div className="prize-img">
